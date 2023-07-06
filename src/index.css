@@ -1,13 +1,190 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.navlink {
+  color: inherit;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.navbar {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 4%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.navlink {
+  margin-right: 50px;
+  text-decoration: none;
+}
+
+.navbar .logo {
+  font-family: "Fredoka One", cursive;
+  font-size: 22px;
+}
+
+.navlink:hover {
+  opacity: 0.8;
+}
+
+/* homepage css here  */
+.homepage {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.products {
+  width: 100%;
+  padding: 0 2%;
+}
+
+.product {
+  float: left;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 1%;
+  margin: 0 1%;
+}
+
+.product:hover {
+  cursor: pointer;
+  background: rgba(112, 111, 211, 0.15);
+}
+
+.product > p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product > p > span {
+  color: #b71540;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.add-to-card-btn {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0 2%;
+  font-weight: 900;
+}
+
+/* cart page css here  */
+.cart-page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.cart-page > .products {
+  width: 100%;
+}
+
+.cart-page > .products {
+  padding: 2% 0;
+}
+
+.cart-page > .products > .product > img {
+  width: 60px;
+}
+
+/* login and register page css here  */
+.login-page,
+.register-page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.login-page-inner,
+.register-page-inner {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  width: 50%;
+  margin: auto;
+  margin-top: 5%;
+  display: flex;
+}
+
+.register-page-inner {
+  margin-top: 3%;
+}
+
+.login-page-inner img,
+.register-page-inner img {
+  width: 50%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.register-page-inner img {
+  height: 500px;
+}
+
+.login-form,
+.register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.login-form h2,
+.register-form h2 {
+  text-shadow: 2px 2px 2px rgb(255, 0, 0, 0.8);
+  font-size: 50px;
+}
+
+.login-form input,
+.register-form input {
+  padding: 3% 4%;
+  width: 80%;
+}
+
+.login-form .btn,
+.register-form .btn {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 1% 8%;
+}
+
+.login-form p,
+.register-form p {
+  font-size: 18px;
+}
+
+/* footer css here  */
+.footer {
+  width: 100%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.9);
+  background: #2f3640;
+}
+
+.footer p {
+  text-align: center;
+  padding: 2% 0;
+  font-weight: 900;
+  color: #fff;
 }
