@@ -1,3 +1,16 @@
+This github repository have two branches
+#master branch have frontend code
+#main branch have backend code
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
